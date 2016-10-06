@@ -1,0 +1,6 @@
+[submodule "felis-simulator"]
+	path = felis-simulator
+	url = https://github.com/ordovicia/felis-simulator
+[submodule "felis-core"]
+	path = felis-core
+	url = https://github.com/wafrelka/felis-core
