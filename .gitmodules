@@ -4,3 +4,6 @@
 [submodule "felis-core"]
 	path = felis-core
 	url = https://github.com/wafrelka/felis-core
+[submodule "felis-assembler"]
+	path = felis-assembler
+	url = https://github.com/syouhei2/assembla.git
