@@ -7,3 +7,6 @@
 [submodule "felis-assembler"]
     path = felis-assembler
     url = https://github.com/syouhei2/test
+[submodule "felis-compiler"]
+	path = felis-compiler
+	url = https://github.com/mitaniyo/felis-compiler
