@@ -1,8 +1,8 @@
 *.cmt*
 *.bin
 *.log
-test/diff/*.diff
-test/ppm/sim/*.ppm
+*.ppm
+*.diff
 test/raytracer/minrt
 
 
