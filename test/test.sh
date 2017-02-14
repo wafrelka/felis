@@ -4,6 +4,7 @@ set -e
 
 if [ $# -eq 0 ]; then
     echo "Usgae: $0 [bin]"
+    exit 1
 fi
 simbin=$1
 
