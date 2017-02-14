@@ -1,8 +1,9 @@
 *.cmt*
+*.bin
 *.log
-diff/*.diff
-ppm/sim/*.ppm
-raytracer/minrt
+test/diff/*.diff
+test/ppm/sim/*.ppm
+test/raytracer/minrt
 
 
 ### https://raw.github.com/github/gitignore/9ef1596ac14f77ddd79a74e3f621ee117022e107/OCaml.gitignore

@@ -17,13 +17,13 @@ test_dir=$root/test
 # cd $test_dir
 
 cd $root/felis-simulator
-mkdir -p build
+if [ ! -e build ]; then
+    mkdir build
+fi
 cd build
 cmake -DNO_ASSERT=Off -DCMAKE_BUILD_TYPE=Release ..
 make -j5
 cd $test_dir
-
-mkdir -p ppm/sim diff
 
 for f in $(ls sld/*.sld); do
     f2=${f#*/}
