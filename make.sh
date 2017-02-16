@@ -5,7 +5,7 @@ set -e
 cd $(git rev-parse --show-toplevel)
 root=$PWD
 
-git submodule update --recursive --init
+# git submodule update --recursive --init
 
 # compiler
 echo "making compiler"
@@ -31,12 +31,12 @@ if [ ! -e build ]; then
 fi
 cd build
 cmake ..
-make gen_instruction
-cmake -DCMAKE_BUILD_TYPE=Release ..
-make
+# make gen_instruction
+# cmake -DCMAKE_BUILD_TYPE=Release ..
+make -j5
 cd $root
 
 # assemble
 cd felis-assembler
-./asm.sh ../felis-compiler/{sfiles/{array,globals,io,math_primitive,mathlib}.s,rt/raytracer/programs/minrt128.s}
+./asm.sh ../felis-compiler/{sfiles/{array,globals,io2,math_primitive2,mathlib2}.s,rt/raytracer/programs/minrt128.s}
 cp code.bin $root/test/minrt128.bin
